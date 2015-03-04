@@ -30,6 +30,8 @@
 
 - (void)replaceCell:(UIView *)cell cellIndex:(int)cellIndex;
 
+- (void)removeCell:(int)cellIndex;
+
 - (void)updateSize;
 
 - (int)columnCount;

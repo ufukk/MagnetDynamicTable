@@ -12,11 +12,6 @@
 
 @property int cellCount;
 
-@property CGFloat currentHeight;
-
-@property NSMutableDictionary *rowHeights;
-
-
 @end
 
 
@@ -31,16 +26,12 @@
         self->_cellHeight = cellHeight;
         self->_cellMargin = cellMargin;
         
-        self->_rowIteratorIndex = 0;
-        
-        if(title)
-        {
+        if(title) {
             self->_titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 50)];
             self.titleView.text = title;
             self.titleView.textColor = [UIColor whiteColor];
             [self addSubview:self.titleView];
         }
-        self.currentHeight = [self topMargin];
     }
     return self;
 }
@@ -86,19 +77,31 @@
 
 
 - (CGFloat)totalHeight {
-    CGFloat total = self.cellMargin * self.rowHeights.count;
-    for(NSNumber *key in self.rowHeights) {
-        total += [[self.rowHeights objectForKey:key] floatValue];
+    CGFloat height = [self pointForCell:self.cellCount].y;
+    int columnCount = [self columnCount];
+    int rowIndex = floor((self.cellCount - 1) / columnCount);
+    if(self.cellCount % columnCount != 0)
+        height += [self heightForRow:rowIndex] + self.cellMargin;
+    return height;
+}
+
+- (CGFloat)heightForRow:(int)rowIndex {
+    int columnCount = [self columnCount];
+    int currentHeight = 0;
+    for(int i = rowIndex * columnCount; i < (rowIndex * columnCount) + columnCount && i < self.cellCount; i++) {
+        UIView *cell = [self cellForIndex:i];
+        if(cell.frame.size.height > currentHeight)
+            currentHeight = cell.frame.size.height;
     }
     
-    return total + self.cellMargin;
+    return currentHeight;
 }
 
-- (CGPoint)pointForNewCell:(CGFloat)height {
-    return [self pointForNewCell:height cellIndex:self.cellCount];
+- (CGPoint)pointForNewCell {
+    return [self pointForCell:self.cellCount];
 }
 
-- (CGPoint)pointForNewCell:(CGFloat)height cellIndex:(int)cellIndex {
+- (CGPoint)pointForCell:(int)cellIndex {
     int columnCount = [self columnCount];
     int rowIndex = floor(cellIndex / columnCount);
     int columnIndex = cellIndex % columnCount;
@@ -114,29 +117,31 @@
         }
     }
     
-    if(self.rowIteratorIndex == 0 && self.currentHeight == 0)
-        self.currentHeight += self.cellMargin;
-    
-    if(rowIndex > self.rowIteratorIndex) {
-        self.currentHeight += [[self.rowHeights objectForKey:[NSNumber numberWithInt:self.rowIteratorIndex]] floatValue] + self.cellMargin;
-        self->_rowIteratorIndex = rowIndex;
+    CGFloat height = [self topMargin];
+    int currentRowIndex = 0;
+    CGFloat currentRowHeight = 0;
+    for(int j = 0; j < cellIndex; j++) {
+        int iteratorRowIndex = floor(j / columnCount);
+        UIView *cell = [self cellForIndex:j];
+        if(iteratorRowIndex != currentRowIndex) {
+            currentRowIndex = iteratorRowIndex;
+            height += currentRowHeight + self.cellMargin;
+            currentRowHeight = cell.frame.size.height;
+        } else {
+            if(cell.frame.size.height > currentRowHeight)
+                currentRowHeight = cell.frame.size.height;
+        }
     }
-    return CGPointMake(columnIndex * widthUnit, self.currentHeight);
+    if(currentRowIndex != rowIndex)
+        height += currentRowHeight + self.cellMargin;
+    
+    return CGPointMake(columnIndex * widthUnit, height);
 }
 
 
 
 -(void)updateSize {
     [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, [self totalHeight])];
-}
-
-- (void)willRemoveSubview:(UIView *)subview {
-    int rowCount = [self rowCount];
-    self.cellCount--;
-    if([self rowCount] < rowCount) {
-        self.currentHeight -= (subview.frame.size.height + self.cellMargin);
-        self->_rowIteratorIndex--;
-    }
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview {
@@ -152,34 +157,43 @@
 }
 
 - (void)replaceCell:(UIView *)cell cellIndex:(int)cellIndex {
-    int height = cell.frame.size.height > 0 ? cell.frame.size.height : self.cellHeight;
     int columnIndex = cellIndex % [self columnCount];
-    int rowIndex = floor(cellIndex / [self columnCount]);
-    
     if(cellIndex < self.cellCount) {
         UIView *subView = [self cellForIndex:cellIndex];
         [subView removeFromSuperview];
     }
     
-    CGPoint point = [self pointForNewCell:height cellIndex:cellIndex];
+    CGPoint point = [self pointForCell:cellIndex];
     int width = self.columnWidths == nil ? self.cellWidth : [[self.columnWidths objectAtIndex:columnIndex] floatValue];
     cell.frame = CGRectMake(point.x, point.y, width, cell.frame.size.height);
     [self addSubview:cell];
     if(self.cellCount <= cellIndex)
         self.cellCount++;
     
-    if(self.rowHeights == nil)
-        self.rowHeights = [NSMutableDictionary new];
-    
-    if(cell.frame.size.height > [[self.rowHeights objectForKey:[NSNumber numberWithInt:rowIndex]] floatValue])
-        [self.rowHeights setObject:[NSNumber numberWithInt:cell.frame.size.height] forKey:[NSNumber numberWithInt:rowIndex]];
-    
-    [self updateSize];
+    if(cellIndex < self.cellCount)
+        [self repositionAllCells];
 
+    [self updateSize];
+}
+
+- (void)repositionAllCells {
+    for(int i = 0; i < self.cellCount; i++) {
+        UIView *cell = [self cellForIndex:i];
+        CGPoint position = [self pointForCell:i];
+        cell.frame = CGRectMake(position.x, position.y, cell.frame.size.width, cell.frame.size.height);
+    }
 }
 
 - (void)addCell:(UIView *)cell {
     [self replaceCell:cell cellIndex:self.cellCount];
+}
+
+- (void)removeCell:(int)cellIndex {
+    UIView *cell = [self cellForIndex:cellIndex];
+    [cell removeFromSuperview];
+    self.cellCount--;
+    [self repositionAllCells];
+    [self updateSize];
 }
 
 - (BOOL)isRowCollapsed:(int)rowIndex {
