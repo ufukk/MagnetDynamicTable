@@ -14,8 +14,6 @@
 		E122154C1A9DFBC900F6E1CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E122154B1A9DFBC900F6E1CD /* Images.xcassets */; };
 		E122154F1A9DFBC900F6E1CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E122154D1A9DFBC900F6E1CD /* LaunchScreen.xib */; };
 		E122155B1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E122155A1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m */; };
-		E12215691A9DFC0E00F6E1CD /* StaticTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E12215651A9DFC0E00F6E1CD /* StaticTable.m */; };
-		E122156A1A9DFC0E00F6E1CD /* CollapsibleTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E12215661A9DFC0E00F6E1CD /* CollapsibleTable.m */; };
 		E122156D1A9DFC2E00F6E1CD /* DynamicTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */; };
 		E12215701A9DFE3F00F6E1CD /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E122156F1A9DFE3F00F6E1CD /* TableViewController.m */; };
 /* End PBXBuildFile section */
@@ -44,10 +42,6 @@
 		E12215541A9DFBC900F6E1CD /* MagnetDynamicTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetDynamicTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12215591A9DFBC900F6E1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E122155A1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagnetDynamicTableTests.m; sourceTree = "<group>"; };
-		E12215651A9DFC0E00F6E1CD /* StaticTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticTable.m; sourceTree = "<group>"; };
-		E12215661A9DFC0E00F6E1CD /* CollapsibleTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollapsibleTable.m; sourceTree = "<group>"; };
-		E12215671A9DFC0E00F6E1CD /* CollapsibleTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollapsibleTable.h; sourceTree = "<group>"; };
-		E12215681A9DFC0E00F6E1CD /* StaticTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticTable.h; sourceTree = "<group>"; };
 		E122156B1A9DFC2E00F6E1CD /* DynamicTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTable.h; sourceTree = "<group>"; };
 		E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTable.m; sourceTree = "<group>"; };
 		E122156E1A9DFE3F00F6E1CD /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
@@ -137,10 +131,6 @@
 		E12215641A9DFBD300F6E1CD /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				E12215651A9DFC0E00F6E1CD /* StaticTable.m */,
-				E12215661A9DFC0E00F6E1CD /* CollapsibleTable.m */,
-				E12215671A9DFC0E00F6E1CD /* CollapsibleTable.h */,
-				E12215681A9DFC0E00F6E1CD /* StaticTable.h */,
 				E122156B1A9DFC2E00F6E1CD /* DynamicTable.h */,
 				E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */,
 			);
@@ -248,12 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E122156D1A9DFC2E00F6E1CD /* DynamicTable.m in Sources */,
-				E12215691A9DFC0E00F6E1CD /* StaticTable.m in Sources */,
 				E12215471A9DFBC900F6E1CD /* ViewController.m in Sources */,
 				E12215441A9DFBC900F6E1CD /* AppDelegate.m in Sources */,
 				E12215411A9DFBC900F6E1CD /* main.m in Sources */,
 				E12215701A9DFE3F00F6E1CD /* TableViewController.m in Sources */,
-				E122156A1A9DFC0E00F6E1CD /* CollapsibleTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +434,7 @@
 				E12215601A9DFBC900F6E1CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E12215611A9DFBC900F6E1CD /* Build configuration list for PBXNativeTarget "MagnetDynamicTableTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +443,7 @@
 				E12215631A9DFBC900F6E1CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

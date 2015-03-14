@@ -26,6 +26,8 @@
 
 - (id)initWithFrame:(CGRect)frame columnWidths:(NSArray *)columnWidths cellHeight:(int)cellHeight cellMargin:(int)cellMargin title:(NSString *)title;
 
+- (UIView *)cellForIndex:(int)cellIndex;
+
 - (void)addCell:(UIView *)cell;
 
 - (void)replaceCell:(UIView *)cell cellIndex:(int)cellIndex;

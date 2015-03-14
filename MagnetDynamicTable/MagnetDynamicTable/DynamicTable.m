@@ -10,7 +10,7 @@
 
 @interface DynamicTable()
 
-@property int cellCount;
+@property NSMutableArray *cells;
 
 @end
 
@@ -21,10 +21,10 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.cellCount = 0;
         self->_cellWidth = cellWidth;
         self->_cellHeight = cellHeight;
         self->_cellMargin = cellMargin;
+        self.cells = [NSMutableArray new];
         
         if(title) {
             self->_titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 50)];
@@ -60,9 +60,9 @@
 }
 
 -(int)rowCount {
-    int rowCount = ceil((self.cellCount * [self calculatedCellWidth]) / self.frame.size.width);
+    int rowCount = ceil((self.cells.count * [self calculatedCellWidth]) / self.frame.size.width);
     if(self.columnWidths != nil)
-        rowCount = ceil(self.cellCount / self.columnWidths.count);
+        rowCount = ceil(self.cells.count / self.columnWidths.count);
     if(rowCount == 0)
         rowCount = 1;
     return rowCount;
@@ -77,10 +77,10 @@
 
 
 - (CGFloat)totalHeight {
-    CGFloat height = [self pointForCell:self.cellCount].y;
+    CGFloat height = [self pointForCell:self.cells.count].y;
     int columnCount = [self columnCount];
-    int rowIndex = floor((self.cellCount - 1) / columnCount);
-    if(self.cellCount % columnCount != 0)
+    int rowIndex = floor((self.cells.count - 1) / columnCount);
+    if(self.cells.count % columnCount != 0)
         height += [self heightForRow:rowIndex] + self.cellMargin;
     return height;
 }
@@ -88,7 +88,7 @@
 - (CGFloat)heightForRow:(int)rowIndex {
     int columnCount = [self columnCount];
     int currentHeight = 0;
-    for(int i = rowIndex * columnCount; i < (rowIndex * columnCount) + columnCount && i < self.cellCount; i++) {
+    for(int i = rowIndex * columnCount; i < (rowIndex * columnCount) + columnCount && i < self.cells.count; i++) {
         UIView *cell = [self cellForIndex:i];
         if(cell.frame.size.height > currentHeight)
             currentHeight = cell.frame.size.height;
@@ -98,7 +98,7 @@
 }
 
 - (CGPoint)pointForNewCell {
-    return [self pointForCell:self.cellCount];
+    return [self pointForCell:self.cells.count];
 }
 
 - (CGPoint)pointForCell:(int)cellIndex {
@@ -110,7 +110,6 @@
     
     if(self.columnWidths != nil) {
         widthUnit = 0;
-        
         for(int i = 0; i < columnCount - 1; i++) {
             widthUnit += [(NSNumber *)[self.columnWidths objectAtIndex:i] floatValue];
             widthUnit += self.cellMargin;
@@ -153,13 +152,14 @@
 }
 
 - (UIView *)cellForIndex:(int)cellIndex {
-    return self.titleView != nil ? [self.subviews objectAtIndex:cellIndex+1] : [self.subviews objectAtIndex:cellIndex];
+    return [self.cells objectAtIndex:cellIndex];
 }
 
 - (void)replaceCell:(UIView *)cell cellIndex:(int)cellIndex {
     int columnIndex = cellIndex % [self columnCount];
-    if(cellIndex < self.cellCount) {
+    if(cellIndex < self.cells.count) {
         UIView *subView = [self cellForIndex:cellIndex];
+        [self.cells removeObject:subView];
         [subView removeFromSuperview];
     }
     
@@ -167,17 +167,17 @@
     int width = self.columnWidths == nil ? self.cellWidth : [[self.columnWidths objectAtIndex:columnIndex] floatValue];
     cell.frame = CGRectMake(point.x, point.y, width, cell.frame.size.height);
     [self addSubview:cell];
-    if(self.cellCount <= cellIndex)
-        self.cellCount++;
     
-    if(cellIndex < self.cellCount)
+    [self.cells insertObject:cell atIndex:cellIndex];
+    
+    if(cellIndex < self.cells.count)
         [self repositionAllCells];
 
     [self updateSize];
 }
 
 - (void)repositionAllCells {
-    for(int i = 0; i < self.cellCount; i++) {
+    for(int i = 0; i < self.cells.count; i++) {
         UIView *cell = [self cellForIndex:i];
         CGPoint position = [self pointForCell:i];
         cell.frame = CGRectMake(position.x, position.y, cell.frame.size.width, cell.frame.size.height);
@@ -185,13 +185,12 @@
 }
 
 - (void)addCell:(UIView *)cell {
-    [self replaceCell:cell cellIndex:self.cellCount];
+    [self replaceCell:cell cellIndex:self.cells.count];
 }
 
 - (void)removeCell:(int)cellIndex {
     UIView *cell = [self cellForIndex:cellIndex];
     [cell removeFromSuperview];
-    self.cellCount--;
     [self repositionAllCells];
     [self updateSize];
 }

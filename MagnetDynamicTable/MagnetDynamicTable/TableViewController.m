@@ -8,7 +8,6 @@
 
 #import "TableViewController.h"
 #import "DynamicTable.h"
-#import "StaticTable.h"
 
 @interface TableViewController ()
 
@@ -82,10 +81,11 @@
 - (void)replaceButtonClicked {
     int cellNo = [self.replaceCell.text intValue];
     self.replacedCount++;
+    
     UIView *subView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 50)];
     subView.backgroundColor = [UIColor greenColor];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 60, 20)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 90, 20)];
     label.text = [NSString stringWithFormat:@"replaced: %i", self.replacedCount];
     [subView addSubview:label];
     [self.table replaceCell:subView cellIndex:cellNo];
