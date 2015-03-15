@@ -211,46 +211,67 @@
 }
 
 - (BOOL)isRowCollapsed:(int)rowIndex {
-    UIView *view = [[self subviews] objectAtIndex:rowIndex];
+    UIView *view = [self cellForIndex:rowIndex];
     return view.hidden;
 }
 
-- (void)collapseRow:(int)rowIndex {
+- (void)collapseRow:(int)rowIndex animate:(BOOL)animate {
     if([self isRowCollapsed:rowIndex])
         return;
     
-    UIView *view = [[self subviews] objectAtIndex:rowIndex];
+    UIView *view = [self cellForIndex:rowIndex];
     CGFloat height = view.frame.size.height + self.cellMargin;
-    [view setHidden:YES];
+    CGRect frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, view.frame.size.height);
+    CGRect newFrame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, view.frame.size.height);
     
-    for(int i = rowIndex + 1; i < self.subviews.count; i++) {
-        UIView *rowView = [self.subviews objectAtIndex:i];
-        rowView.frame = CGRectMake(rowView.frame.origin.x, rowView.frame.origin.y - height, rowView.frame.size.width, rowView.frame.size.height);
-    }
+    CGFloat duration = animate ? 1.0 : 0;
+    [UIView animateWithDuration:duration animations:^{
+        view.frame = newFrame;
+        for(int i = rowIndex+1; i < self.cells.count; i++) {
+            UIView *rowView = [self cellForIndex:i];
+            rowView.frame = CGRectMake(rowView.frame.origin.x, rowView.frame.origin.y - height, rowView.frame.size.width, rowView.frame.size.height);
+        }
+        
+    } completion:^(BOOL finished) {
+        view.frame = frame;
+        [view setHidden:YES];
+    }];
 }
 
 
-- (void)expandRow:(int)rowIndex {
+- (void)expandRow:(int)rowIndex animate:(BOOL)animate{
     if(![self isRowCollapsed:rowIndex])
         return;
     
-    UIView *view = [[self subviews] objectAtIndex:rowIndex];
+    UIView *view = [self cellForIndex:rowIndex];
     CGFloat height = view.frame.size.height + self.cellMargin;
     
-    for(int i = rowIndex + 1; i < self.subviews.count; i++) {
-        UIView *rowView = [self.subviews objectAtIndex:i];
-        rowView.frame = CGRectMake(rowView.frame.origin.x, rowView.frame.origin.y + height, rowView.frame.size.width, rowView.frame.size.height);
-    }
+    CGRect frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, 0);
+    CGRect newFrame = CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, view.frame.size.height);
     
+    view.frame = frame;
     [view setHidden:NO];
+
+    CGFloat duration = animate ? 1.0 : 0;
+    
+    [UIView animateWithDuration:duration animations:^{
+        view.frame = newFrame;
+        for(int i = rowIndex+1; i < self.cells.count; i++) {
+            UIView *rowView = [self cellForIndex:i];
+            rowView.frame = CGRectMake(rowView.frame.origin.x, rowView.frame.origin.y + height, rowView.frame.size.width, rowView.frame.size.height);
+        }
+        
+    } completion:^(BOOL finished) {
+    }];
 }
 
-- (void)toggleRow:(int)rowIndex {
+
+- (void)toggleRow:(int)rowIndex animate:(BOOL)animate {
     UIView *view = [[self subviews] objectAtIndex:rowIndex];
     if(view.isHidden)
-        [self expandRow:rowIndex];
+        [self expandRow:rowIndex animate:animate];
     else
-        [self collapseRow:rowIndex];
+        [self collapseRow:rowIndex animate:animate];
 }
 
 

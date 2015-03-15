@@ -60,8 +60,6 @@
     
     [self.table updateSize];
     
-    CGSize size = self.table.frame.size;
-    
     [self.view addSubview:self.table];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 400, 100, 30)];

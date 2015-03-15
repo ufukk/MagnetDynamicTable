@@ -40,11 +40,11 @@
 
 - (BOOL)isRowCollapsed:(int)rowIndex;
 
-- (void)collapseRow:(int)rowIndex;
+- (void)collapseRow:(int)rowIndex animate:(BOOL)animate;
 
-- (void)expandRow:(int)rowIndex;
+- (void)expandRow:(int)rowIndex animate:(BOOL)animate;
 
-- (void)toggleRow:(int)rowIndex;
+- (void)toggleRow:(int)rowIndex animate:(BOOL)animate;
 
 
 @end
