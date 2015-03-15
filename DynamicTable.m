@@ -44,6 +44,18 @@
     return self;
 }
 
+- (void)setCellWidth:(CGFloat)cellWidth {
+    self->_cellWidth = cellWidth;
+    if(self.cells.count > 0)
+        [self repositionAllCells];
+}
+
+- (void)setCellMargin:(CGFloat)cellMargin {
+    self->_cellMargin = cellMargin;
+    if(self.cells.count > 0)
+        [self repositionAllCells];
+}
+
 -(CGFloat)calculatedCellWidth {
     return self.cellWidth + self.cellMargin;
 }
@@ -236,6 +248,12 @@
         [self expandRow:rowIndex];
     else
         [self collapseRow:rowIndex];
+}
+
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    [self repositionAllCells];
 }
 
 @end
