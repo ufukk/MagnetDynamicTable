@@ -20,13 +20,13 @@
 - (void)viewDidLoad {
     
     UIScrollView *container = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
-    self.table = [[DynamicTable alloc] initWithFrame:CGRectMake(50, 50, 600, 100) cellWidth:580 cellHeight:10 cellMargin:5 title:nil];
+    self.table = [[DynamicTable alloc] initWithFrame:CGRectMake(50, 50, 600, 100) cellWidth:580 cellMargin:5 title:nil];
     
     self.table.backgroundColor = [UIColor lightGrayColor];
     
     for(int i = 0; i < 30; i++) {
         
-        DynamicTable *cell = [[DynamicTable alloc] initWithFrame:CGRectMake(0, 0, 580, 100) cellWidth:260 cellHeight:10 cellMargin:5 title:nil];
+        DynamicTable *cell = [[DynamicTable alloc] initWithFrame:CGRectMake(0, 0, 580, 100) cellWidth:260 cellMargin:5 title:nil];
         
         cell.backgroundColor = (i % 3 == 0) ? [UIColor cyanColor] : (i % 2 == 0) ? [UIColor yellowColor] : [UIColor whiteColor];
         

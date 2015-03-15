@@ -17,12 +17,11 @@
 
 @implementation DynamicTable
 
-- (id)initWithFrame:(CGRect)frame cellWidth:(int)cellWidth cellHeight:(int)cellHeight cellMargin:(int)cellMargin title:(NSString *)title
+- (id)initWithFrame:(CGRect)frame cellWidth:(int)cellWidth cellMargin:(int)cellMargin title:(NSString *)title
 {
     self = [super initWithFrame:frame];
     if (self) {
         self->_cellWidth = cellWidth;
-        self->_cellHeight = cellHeight;
         self->_cellMargin = cellMargin;
         self.cells = [NSMutableArray new];
         
@@ -36,8 +35,8 @@
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame columnWidths:(NSArray *)columnWidths cellHeight:(int)cellHeight cellMargin:(int)cellMargin title:(NSString *)title {
-    if(self = [self initWithFrame:frame cellWidth:0 cellHeight:cellHeight cellMargin:cellMargin title:title]) {
+- (id)initWithFrame:(CGRect)frame columnWidths:(NSArray *)columnWidths cellMargin:(int)cellMargin title:(NSString *)title {
+    if(self = [self initWithFrame:frame cellWidth:0 cellMargin:cellMargin title:title]) {
         self->_columnWidths = columnWidths;
     }
     

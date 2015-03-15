@@ -27,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.table = [[DynamicTable alloc] initWithFrame:CGRectMake(50, 50, 600, 100) cellWidth:280 cellHeight:0 cellMargin:10 title:nil];
+    self.table = [[DynamicTable alloc] initWithFrame:CGRectMake(50, 50, 600, 100) cellWidth:280 cellMargin:10 title:nil];
     self.table.backgroundColor = [UIColor lightGrayColor];
     
     UIView *subView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 30)];

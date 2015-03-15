@@ -22,9 +22,9 @@
 
 @property UILabel *titleView;
 
-- (id)initWithFrame:(CGRect)frame cellWidth:(int)cellWidth cellHeight:(int)cellHeight cellMargin:(int)cellMargin title:(NSString *)title;
+- (id)initWithFrame:(CGRect)frame cellWidth:(int)cellWidth cellMargin:(int)cellMargin title:(NSString *)title;
 
-- (id)initWithFrame:(CGRect)frame columnWidths:(NSArray *)columnWidths cellHeight:(int)cellHeight cellMargin:(int)cellMargin title:(NSString *)title;
+- (id)initWithFrame:(CGRect)frame columnWidths:(NSArray *)columnWidths cellMargin:(int)cellMargin title:(NSString *)title;
 
 - (UIView *)cellForIndex:(int)cellIndex;
 

@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    DynamicTable *table = [[DynamicTable alloc] initWithFrame:CGRectMake(50, 50, 600, 100) columnWidths:@[[NSNumber numberWithFloat:380.0], [NSNumber numberWithFloat:200.0]] cellHeight:10 cellMargin:5 title:nil];
+    DynamicTable *table = [[DynamicTable alloc] initWithFrame:CGRectMake(50, 50, 600, 100) columnWidths:@[[NSNumber numberWithFloat:380.0], [NSNumber numberWithFloat:200.0]] cellMargin:5 title:nil];
     
     table.backgroundColor = [UIColor lightGrayColor];
     
