@@ -46,14 +46,17 @@
 
 - (void)setCellWidth:(CGFloat)cellWidth {
     self->_cellWidth = cellWidth;
-    if(self.cells.count > 0)
-        [self repositionAllCells];
+    [self repositionAllCells];
 }
 
 - (void)setCellMargin:(CGFloat)cellMargin {
     self->_cellMargin = cellMargin;
-    if(self.cells.count > 0)
-        [self repositionAllCells];
+    [self repositionAllCells];
+}
+
+- (void)setColumnWidths:(NSArray *)columnWidths {
+    self->_columnWidths = columnWidths;
+    [self repositionAllCells];
 }
 
 -(CGFloat)calculatedCellWidth {
