@@ -16,6 +16,9 @@
 		E122155B1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E122155A1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m */; };
 		E122156D1A9DFC2E00F6E1CD /* DynamicTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */; };
 		E12215701A9DFE3F00F6E1CD /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E122156F1A9DFE3F00F6E1CD /* TableViewController.m */; };
+		E13E55CC1AB4B785006999A4 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E55CB1AB4B785006999A4 /* TabsViewController.m */; };
+		E13E55CF1AB4B7B1006999A4 /* InnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E55CE1AB4B7B1006999A4 /* InnerTableViewController.m */; };
+		E13E55D21AB565EB006999A4 /* ColumnsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E55D11AB565EB006999A4 /* ColumnsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,12 @@
 		E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTable.m; sourceTree = "<group>"; };
 		E122156E1A9DFE3F00F6E1CD /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		E122156F1A9DFE3F00F6E1CD /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		E13E55CA1AB4B785006999A4 /* TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabsViewController.h; sourceTree = "<group>"; };
+		E13E55CB1AB4B785006999A4 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
+		E13E55CD1AB4B7B1006999A4 /* InnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InnerTableViewController.h; sourceTree = "<group>"; };
+		E13E55CE1AB4B7B1006999A4 /* InnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InnerTableViewController.m; sourceTree = "<group>"; };
+		E13E55D01AB565EB006999A4 /* ColumnsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnsViewController.h; sourceTree = "<group>"; };
+		E13E55D11AB565EB006999A4 /* ColumnsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +107,12 @@
 				E122153E1A9DFBC900F6E1CD /* Supporting Files */,
 				E122156E1A9DFE3F00F6E1CD /* TableViewController.h */,
 				E122156F1A9DFE3F00F6E1CD /* TableViewController.m */,
+				E13E55CA1AB4B785006999A4 /* TabsViewController.h */,
+				E13E55CB1AB4B785006999A4 /* TabsViewController.m */,
+				E13E55CD1AB4B7B1006999A4 /* InnerTableViewController.h */,
+				E13E55CE1AB4B7B1006999A4 /* InnerTableViewController.m */,
+				E13E55D01AB565EB006999A4 /* ColumnsViewController.h */,
+				E13E55D11AB565EB006999A4 /* ColumnsViewController.m */,
 			);
 			path = MagnetDynamicTable;
 			sourceTree = "<group>";
@@ -237,6 +252,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13E55CC1AB4B785006999A4 /* TabsViewController.m in Sources */,
+				E13E55CF1AB4B7B1006999A4 /* InnerTableViewController.m in Sources */,
+				E13E55D21AB565EB006999A4 /* ColumnsViewController.m in Sources */,
 				E122156D1A9DFC2E00F6E1CD /* DynamicTable.m in Sources */,
 				E12215471A9DFBC900F6E1CD /* ViewController.m in Sources */,
 				E12215441A9DFBC900F6E1CD /* AppDelegate.m in Sources */,

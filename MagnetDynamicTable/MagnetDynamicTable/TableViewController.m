@@ -47,12 +47,16 @@
     UIView *subView5 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 110)];
     subView5.backgroundColor = [UIColor cyanColor];
 
+    UIView *subView6 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 280, 130)];
+    subView6.backgroundColor = [UIColor whiteColor];
+
     
     [self.table addCell:subView1];
     [self.table addCell:subView3];
     [self.table addCell:subView2];
     [self.table addCell:subView4];
     [self.table addCell:subView5];
+    [self.table addCell:subView6];
     
     [self.table updateSize];
     
@@ -60,14 +64,14 @@
     
     [self.view addSubview:self.table];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 400, 100, 30)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(50, 400, 100, 30)];
     label.text = @"CELL NO:";
-    self.replaceCell = [[UITextField alloc] initWithFrame:CGRectMake(120, 400, 80, 30)];
+    self.replaceCell = [[UITextField alloc] initWithFrame:CGRectMake(140, 400, 80, 30)];
     self.replaceCell.backgroundColor = [UIColor lightGrayColor];
     self.replaceButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.replaceButton.backgroundColor = [UIColor blackColor];
     [self.replaceButton setTitle:@"REPLACE CELL" forState:UIControlStateNormal];
-    self.replaceButton.frame = CGRectMake(210, 400, 130, 30);
+    self.replaceButton.frame = CGRectMake(230, 400, 150, 30);
     [self.replaceButton addTarget:nil action:@selector(replaceButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     
     
