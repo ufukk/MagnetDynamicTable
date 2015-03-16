@@ -6,7 +6,7 @@ Creating a table is simple:
 
 		DynamicTable *table = [[DynamicTable alloc] initWithFrame:CGRectMake(0, 0, 500, 100) cellWidth:260 cellMargin:5 title:nil];
 
-Height is unimportant as it will be automatically set to total height of cells.
+Height is unimportant as it will be automatically set to total height of cells after any change.
 
 Adding a cell:
 
