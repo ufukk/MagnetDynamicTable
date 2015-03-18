@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E12215411A9DFBC900F6E1CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E12215401A9DFBC900F6E1CD /* main.m */; };
-		E12215441A9DFBC900F6E1CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E12215431A9DFBC900F6E1CD /* AppDelegate.m */; };
-		E122154A1A9DFBC900F6E1CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12215481A9DFBC900F6E1CD /* Main.storyboard */; };
-		E122154C1A9DFBC900F6E1CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E122154B1A9DFBC900F6E1CD /* Images.xcassets */; };
-		E122154F1A9DFBC900F6E1CD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E122154D1A9DFBC900F6E1CD /* LaunchScreen.xib */; };
-		E122155B1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E122155A1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m */; };
-		E122156D1A9DFC2E00F6E1CD /* DynamicTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */; };
-		E12215701A9DFE3F00F6E1CD /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E122156F1A9DFE3F00F6E1CD /* TableViewController.m */; };
-		E13E55CC1AB4B785006999A4 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E55CB1AB4B785006999A4 /* TabsViewController.m */; };
-		E13E55CF1AB4B7B1006999A4 /* InnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E55CE1AB4B7B1006999A4 /* InnerTableViewController.m */; };
-		E13E55D21AB565EB006999A4 /* ColumnsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E55D11AB565EB006999A4 /* ColumnsViewController.m */; };
+		E112FE9D1AB9AFC1009C6F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FE9C1AB9AFC1009C6F09 /* main.m */; };
+		E112FEA01AB9AFC1009C6F09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FE9F1AB9AFC1009C6F09 /* AppDelegate.m */; };
+		E112FEA61AB9AFC1009C6F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E112FEA41AB9AFC1009C6F09 /* Main.storyboard */; };
+		E112FEA81AB9AFC1009C6F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E112FEA71AB9AFC1009C6F09 /* Images.xcassets */; };
+		E112FEAB1AB9AFC1009C6F09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E112FEA91AB9AFC1009C6F09 /* LaunchScreen.xib */; };
+		E112FEB71AB9AFC1009C6F09 /* MagnetDynamicTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FEB61AB9AFC1009C6F09 /* MagnetDynamicTableTests.m */; };
+		E112FEC31AB9B08D009C6F09 /* DynamicTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FEC21AB9B08D009C6F09 /* DynamicTable.m */; };
+		E112FECD1AB9B0F9009C6F09 /* ColumnsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FEC61AB9B0F9009C6F09 /* ColumnsViewController.m */; };
+		E112FECE1AB9B0F9009C6F09 /* InnerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FEC81AB9B0F9009C6F09 /* InnerTableViewController.m */; };
+		E112FECF1AB9B0F9009C6F09 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FECA1AB9B0F9009C6F09 /* TableViewController.m */; };
+		E112FED01AB9B0F9009C6F09 /* TabsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E112FECC1AB9B0F9009C6F09 /* TabsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E12215551A9DFBC900F6E1CD /* PBXContainerItemProxy */ = {
+		E112FEB11AB9AFC1009C6F09 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E12215331A9DFBC900F6E1CD /* Project object */;
+			containerPortal = E112FE8F1AB9AFC1009C6F09 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E122153A1A9DFBC900F6E1CD;
+			remoteGlobalIDString = E112FE961AB9AFC1009C6F09;
 			remoteInfo = MagnetDynamicTable;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E122153B1A9DFBC900F6E1CD /* MagnetDynamicTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetDynamicTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E122153F1A9DFBC900F6E1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		E12215401A9DFBC900F6E1CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
-		E12215421A9DFBC900F6E1CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		E12215431A9DFBC900F6E1CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		E12215491A9DFBC900F6E1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E122154B1A9DFBC900F6E1CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
-		E122154E1A9DFBC900F6E1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E12215541A9DFBC900F6E1CD /* MagnetDynamicTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetDynamicTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E12215591A9DFBC900F6E1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E122155A1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagnetDynamicTableTests.m; sourceTree = "<group>"; };
-		E122156B1A9DFC2E00F6E1CD /* DynamicTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicTable.h; path = ../DynamicTable.h; sourceTree = "<group>"; };
-		E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicTable.m; path = ../DynamicTable.m; sourceTree = "<group>"; };
-		E122156E1A9DFE3F00F6E1CD /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
-		E122156F1A9DFE3F00F6E1CD /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
-		E13E55CA1AB4B785006999A4 /* TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabsViewController.h; path = ../TabsViewController.h; sourceTree = "<group>"; };
-		E13E55CB1AB4B785006999A4 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabsViewController.m; path = ../TabsViewController.m; sourceTree = "<group>"; };
-		E13E55CD1AB4B7B1006999A4 /* InnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InnerTableViewController.h; path = ../InnerTableViewController.h; sourceTree = "<group>"; };
-		E13E55CE1AB4B7B1006999A4 /* InnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InnerTableViewController.m; path = ../InnerTableViewController.m; sourceTree = "<group>"; };
-		E13E55D01AB565EB006999A4 /* ColumnsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ColumnsViewController.h; path = ../ColumnsViewController.h; sourceTree = "<group>"; };
-		E13E55D11AB565EB006999A4 /* ColumnsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ColumnsViewController.m; path = ../ColumnsViewController.m; sourceTree = "<group>"; };
+		E112FE971AB9AFC1009C6F09 /* MagnetDynamicTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagnetDynamicTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E112FE9B1AB9AFC1009C6F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E112FE9C1AB9AFC1009C6F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E112FE9E1AB9AFC1009C6F09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E112FE9F1AB9AFC1009C6F09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E112FEA51AB9AFC1009C6F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E112FEA71AB9AFC1009C6F09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E112FEAA1AB9AFC1009C6F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E112FEB01AB9AFC1009C6F09 /* MagnetDynamicTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetDynamicTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E112FEB51AB9AFC1009C6F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E112FEB61AB9AFC1009C6F09 /* MagnetDynamicTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagnetDynamicTableTests.m; sourceTree = "<group>"; };
+		E112FEC11AB9B08D009C6F09 /* DynamicTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTable.h; sourceTree = "<group>"; };
+		E112FEC21AB9B08D009C6F09 /* DynamicTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTable.m; sourceTree = "<group>"; };
+		E112FEC51AB9B0F9009C6F09 /* ColumnsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnsViewController.h; sourceTree = "<group>"; };
+		E112FEC61AB9B0F9009C6F09 /* ColumnsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnsViewController.m; sourceTree = "<group>"; };
+		E112FEC71AB9B0F9009C6F09 /* InnerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InnerTableViewController.h; sourceTree = "<group>"; };
+		E112FEC81AB9B0F9009C6F09 /* InnerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InnerTableViewController.m; sourceTree = "<group>"; };
+		E112FEC91AB9B0F9009C6F09 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		E112FECA1AB9B0F9009C6F09 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		E112FECB1AB9B0F9009C6F09 /* TabsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabsViewController.h; sourceTree = "<group>"; };
+		E112FECC1AB9B0F9009C6F09 /* TabsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E12215381A9DFBC900F6E1CD /* Frameworks */ = {
+		E112FE941AB9AFC1009C6F09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E12215511A9DFBC900F6E1CD /* Frameworks */ = {
+		E112FEAD1AB9AFC1009C6F09 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,91 +72,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E12215321A9DFBC800F6E1CD = {
+		E112FE8E1AB9AFC1009C6F09 = {
 			isa = PBXGroup;
 			children = (
-				E122153D1A9DFBC900F6E1CD /* MagnetDynamicTable */,
-				E12215571A9DFBC900F6E1CD /* MagnetDynamicTableTests */,
-				E122153C1A9DFBC900F6E1CD /* Products */,
+				E112FE991AB9AFC1009C6F09 /* MagnetDynamicTable */,
+				E112FEB31AB9AFC1009C6F09 /* MagnetDynamicTableTests */,
+				E112FE981AB9AFC1009C6F09 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E122153C1A9DFBC900F6E1CD /* Products */ = {
+		E112FE981AB9AFC1009C6F09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E122153B1A9DFBC900F6E1CD /* MagnetDynamicTable.app */,
-				E12215541A9DFBC900F6E1CD /* MagnetDynamicTableTests.xctest */,
+				E112FE971AB9AFC1009C6F09 /* MagnetDynamicTable.app */,
+				E112FEB01AB9AFC1009C6F09 /* MagnetDynamicTableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E122153D1A9DFBC900F6E1CD /* MagnetDynamicTable */ = {
+		E112FE991AB9AFC1009C6F09 /* MagnetDynamicTable */ = {
 			isa = PBXGroup;
 			children = (
-				E12215641A9DFBD300F6E1CD /* UI */,
-				E12215421A9DFBC900F6E1CD /* AppDelegate.h */,
-				E12215431A9DFBC900F6E1CD /* AppDelegate.m */,
-				E12215481A9DFBC900F6E1CD /* Main.storyboard */,
-				E122154B1A9DFBC900F6E1CD /* Images.xcassets */,
-				E122154D1A9DFBC900F6E1CD /* LaunchScreen.xib */,
-				E122153E1A9DFBC900F6E1CD /* Supporting Files */,
-				E122156E1A9DFE3F00F6E1CD /* TableViewController.h */,
-				E122156F1A9DFE3F00F6E1CD /* TableViewController.m */,
-				E13E55CA1AB4B785006999A4 /* TabsViewController.h */,
-				E13E55CB1AB4B785006999A4 /* TabsViewController.m */,
-				E13E55CD1AB4B7B1006999A4 /* InnerTableViewController.h */,
-				E13E55CE1AB4B7B1006999A4 /* InnerTableViewController.m */,
-				E13E55D01AB565EB006999A4 /* ColumnsViewController.h */,
-				E13E55D11AB565EB006999A4 /* ColumnsViewController.m */,
+				E112FEC41AB9B0EA009C6F09 /* Demo */,
+				E112FEC01AB9B071009C6F09 /* DynamicTable */,
+				E112FE9E1AB9AFC1009C6F09 /* AppDelegate.h */,
+				E112FE9F1AB9AFC1009C6F09 /* AppDelegate.m */,
+				E112FEA41AB9AFC1009C6F09 /* Main.storyboard */,
+				E112FEA71AB9AFC1009C6F09 /* Images.xcassets */,
+				E112FEA91AB9AFC1009C6F09 /* LaunchScreen.xib */,
+				E112FE9A1AB9AFC1009C6F09 /* Supporting Files */,
 			);
 			path = MagnetDynamicTable;
 			sourceTree = "<group>";
 		};
-		E122153E1A9DFBC900F6E1CD /* Supporting Files */ = {
+		E112FE9A1AB9AFC1009C6F09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E122153F1A9DFBC900F6E1CD /* Info.plist */,
-				E12215401A9DFBC900F6E1CD /* main.m */,
+				E112FE9B1AB9AFC1009C6F09 /* Info.plist */,
+				E112FE9C1AB9AFC1009C6F09 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E12215571A9DFBC900F6E1CD /* MagnetDynamicTableTests */ = {
+		E112FEB31AB9AFC1009C6F09 /* MagnetDynamicTableTests */ = {
 			isa = PBXGroup;
 			children = (
-				E122155A1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m */,
-				E12215581A9DFBC900F6E1CD /* Supporting Files */,
+				E112FEB61AB9AFC1009C6F09 /* MagnetDynamicTableTests.m */,
+				E112FEB41AB9AFC1009C6F09 /* Supporting Files */,
 			);
 			path = MagnetDynamicTableTests;
 			sourceTree = "<group>";
 		};
-		E12215581A9DFBC900F6E1CD /* Supporting Files */ = {
+		E112FEB41AB9AFC1009C6F09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E12215591A9DFBC900F6E1CD /* Info.plist */,
+				E112FEB51AB9AFC1009C6F09 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E12215641A9DFBD300F6E1CD /* UI */ = {
+		E112FEC01AB9B071009C6F09 /* DynamicTable */ = {
 			isa = PBXGroup;
 			children = (
-				E122156B1A9DFC2E00F6E1CD /* DynamicTable.h */,
-				E122156C1A9DFC2E00F6E1CD /* DynamicTable.m */,
+				E112FEC11AB9B08D009C6F09 /* DynamicTable.h */,
+				E112FEC21AB9B08D009C6F09 /* DynamicTable.m */,
 			);
-			name = UI;
+			name = DynamicTable;
+			sourceTree = "<group>";
+		};
+		E112FEC41AB9B0EA009C6F09 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E112FEC51AB9B0F9009C6F09 /* ColumnsViewController.h */,
+				E112FEC61AB9B0F9009C6F09 /* ColumnsViewController.m */,
+				E112FEC71AB9B0F9009C6F09 /* InnerTableViewController.h */,
+				E112FEC81AB9B0F9009C6F09 /* InnerTableViewController.m */,
+				E112FEC91AB9B0F9009C6F09 /* TableViewController.h */,
+				E112FECA1AB9B0F9009C6F09 /* TableViewController.m */,
+				E112FECB1AB9B0F9009C6F09 /* TabsViewController.h */,
+				E112FECC1AB9B0F9009C6F09 /* TabsViewController.m */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E122153A1A9DFBC900F6E1CD /* MagnetDynamicTable */ = {
+		E112FE961AB9AFC1009C6F09 /* MagnetDynamicTable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E122155E1A9DFBC900F6E1CD /* Build configuration list for PBXNativeTarget "MagnetDynamicTable" */;
+			buildConfigurationList = E112FEBA1AB9AFC1009C6F09 /* Build configuration list for PBXNativeTarget "MagnetDynamicTable" */;
 			buildPhases = (
-				E12215371A9DFBC900F6E1CD /* Sources */,
-				E12215381A9DFBC900F6E1CD /* Frameworks */,
-				E12215391A9DFBC900F6E1CD /* Resources */,
+				E112FE931AB9AFC1009C6F09 /* Sources */,
+				E112FE941AB9AFC1009C6F09 /* Frameworks */,
+				E112FE951AB9AFC1009C6F09 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -164,46 +172,46 @@
 			);
 			name = MagnetDynamicTable;
 			productName = MagnetDynamicTable;
-			productReference = E122153B1A9DFBC900F6E1CD /* MagnetDynamicTable.app */;
+			productReference = E112FE971AB9AFC1009C6F09 /* MagnetDynamicTable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E12215531A9DFBC900F6E1CD /* MagnetDynamicTableTests */ = {
+		E112FEAF1AB9AFC1009C6F09 /* MagnetDynamicTableTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E12215611A9DFBC900F6E1CD /* Build configuration list for PBXNativeTarget "MagnetDynamicTableTests" */;
+			buildConfigurationList = E112FEBD1AB9AFC1009C6F09 /* Build configuration list for PBXNativeTarget "MagnetDynamicTableTests" */;
 			buildPhases = (
-				E12215501A9DFBC900F6E1CD /* Sources */,
-				E12215511A9DFBC900F6E1CD /* Frameworks */,
-				E12215521A9DFBC900F6E1CD /* Resources */,
+				E112FEAC1AB9AFC1009C6F09 /* Sources */,
+				E112FEAD1AB9AFC1009C6F09 /* Frameworks */,
+				E112FEAE1AB9AFC1009C6F09 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E12215561A9DFBC900F6E1CD /* PBXTargetDependency */,
+				E112FEB21AB9AFC1009C6F09 /* PBXTargetDependency */,
 			);
 			name = MagnetDynamicTableTests;
 			productName = MagnetDynamicTableTests;
-			productReference = E12215541A9DFBC900F6E1CD /* MagnetDynamicTableTests.xctest */;
+			productReference = E112FEB01AB9AFC1009C6F09 /* MagnetDynamicTableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E12215331A9DFBC900F6E1CD /* Project object */ = {
+		E112FE8F1AB9AFC1009C6F09 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = macroismicro;
 				TargetAttributes = {
-					E122153A1A9DFBC900F6E1CD = {
+					E112FE961AB9AFC1009C6F09 = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					E12215531A9DFBC900F6E1CD = {
+					E112FEAF1AB9AFC1009C6F09 = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = E122153A1A9DFBC900F6E1CD;
+						TestTargetID = E112FE961AB9AFC1009C6F09;
 					};
 				};
 			};
-			buildConfigurationList = E12215361A9DFBC900F6E1CD /* Build configuration list for PBXProject "MagnetDynamicTable" */;
+			buildConfigurationList = E112FE921AB9AFC1009C6F09 /* Build configuration list for PBXProject "MagnetDynamicTable" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -211,29 +219,29 @@
 				en,
 				Base,
 			);
-			mainGroup = E12215321A9DFBC800F6E1CD;
-			productRefGroup = E122153C1A9DFBC900F6E1CD /* Products */;
+			mainGroup = E112FE8E1AB9AFC1009C6F09;
+			productRefGroup = E112FE981AB9AFC1009C6F09 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E122153A1A9DFBC900F6E1CD /* MagnetDynamicTable */,
-				E12215531A9DFBC900F6E1CD /* MagnetDynamicTableTests */,
+				E112FE961AB9AFC1009C6F09 /* MagnetDynamicTable */,
+				E112FEAF1AB9AFC1009C6F09 /* MagnetDynamicTableTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E12215391A9DFBC900F6E1CD /* Resources */ = {
+		E112FE951AB9AFC1009C6F09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E122154A1A9DFBC900F6E1CD /* Main.storyboard in Resources */,
-				E122154F1A9DFBC900F6E1CD /* LaunchScreen.xib in Resources */,
-				E122154C1A9DFBC900F6E1CD /* Images.xcassets in Resources */,
+				E112FEA61AB9AFC1009C6F09 /* Main.storyboard in Resources */,
+				E112FEAB1AB9AFC1009C6F09 /* LaunchScreen.xib in Resources */,
+				E112FEA81AB9AFC1009C6F09 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E12215521A9DFBC900F6E1CD /* Resources */ = {
+		E112FEAE1AB9AFC1009C6F09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -243,61 +251,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E12215371A9DFBC900F6E1CD /* Sources */ = {
+		E112FE931AB9AFC1009C6F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13E55CC1AB4B785006999A4 /* TabsViewController.m in Sources */,
-				E13E55CF1AB4B7B1006999A4 /* InnerTableViewController.m in Sources */,
-				E13E55D21AB565EB006999A4 /* ColumnsViewController.m in Sources */,
-				E122156D1A9DFC2E00F6E1CD /* DynamicTable.m in Sources */,
-				E12215441A9DFBC900F6E1CD /* AppDelegate.m in Sources */,
-				E12215411A9DFBC900F6E1CD /* main.m in Sources */,
-				E12215701A9DFE3F00F6E1CD /* TableViewController.m in Sources */,
+				E112FED01AB9B0F9009C6F09 /* TabsViewController.m in Sources */,
+				E112FECD1AB9B0F9009C6F09 /* ColumnsViewController.m in Sources */,
+				E112FEA01AB9AFC1009C6F09 /* AppDelegate.m in Sources */,
+				E112FEC31AB9B08D009C6F09 /* DynamicTable.m in Sources */,
+				E112FECE1AB9B0F9009C6F09 /* InnerTableViewController.m in Sources */,
+				E112FECF1AB9B0F9009C6F09 /* TableViewController.m in Sources */,
+				E112FE9D1AB9AFC1009C6F09 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E12215501A9DFBC900F6E1CD /* Sources */ = {
+		E112FEAC1AB9AFC1009C6F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E122155B1A9DFBC900F6E1CD /* MagnetDynamicTableTests.m in Sources */,
+				E112FEB71AB9AFC1009C6F09 /* MagnetDynamicTableTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E12215561A9DFBC900F6E1CD /* PBXTargetDependency */ = {
+		E112FEB21AB9AFC1009C6F09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E122153A1A9DFBC900F6E1CD /* MagnetDynamicTable */;
-			targetProxy = E12215551A9DFBC900F6E1CD /* PBXContainerItemProxy */;
+			target = E112FE961AB9AFC1009C6F09 /* MagnetDynamicTable */;
+			targetProxy = E112FEB11AB9AFC1009C6F09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E12215481A9DFBC900F6E1CD /* Main.storyboard */ = {
+		E112FEA41AB9AFC1009C6F09 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E12215491A9DFBC900F6E1CD /* Base */,
+				E112FEA51AB9AFC1009C6F09 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
-		E122154D1A9DFBC900F6E1CD /* LaunchScreen.xib */ = {
+		E112FEA91AB9AFC1009C6F09 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E122154E1A9DFBC900F6E1CD /* Base */,
+				E112FEAA1AB9AFC1009C6F09 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E122155C1A9DFBC900F6E1CD /* Debug */ = {
+		E112FEB81AB9AFC1009C6F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -339,7 +345,7 @@
 			};
 			name = Debug;
 		};
-		E122155D1A9DFBC900F6E1CD /* Release */ = {
+		E112FEB91AB9AFC1009C6F09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -375,27 +381,29 @@
 			};
 			name = Release;
 		};
-		E122155F1A9DFBC900F6E1CD /* Debug */ = {
+		E112FEBB1AB9AFC1009C6F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = MagnetDynamicTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		E12215601A9DFBC900F6E1CD /* Release */ = {
+		E112FEBC1AB9AFC1009C6F09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = MagnetDynamicTable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		E12215621A9DFBC900F6E1CD /* Debug */ = {
+		E112FEBE1AB9AFC1009C6F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,7 +422,7 @@
 			};
 			name = Debug;
 		};
-		E12215631A9DFBC900F6E1CD /* Release */ = {
+		E112FEBF1AB9AFC1009C6F09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -432,34 +440,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E12215361A9DFBC900F6E1CD /* Build configuration list for PBXProject "MagnetDynamicTable" */ = {
+		E112FE921AB9AFC1009C6F09 /* Build configuration list for PBXProject "MagnetDynamicTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E122155C1A9DFBC900F6E1CD /* Debug */,
-				E122155D1A9DFBC900F6E1CD /* Release */,
+				E112FEB81AB9AFC1009C6F09 /* Debug */,
+				E112FEB91AB9AFC1009C6F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E122155E1A9DFBC900F6E1CD /* Build configuration list for PBXNativeTarget "MagnetDynamicTable" */ = {
+		E112FEBA1AB9AFC1009C6F09 /* Build configuration list for PBXNativeTarget "MagnetDynamicTable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E122155F1A9DFBC900F6E1CD /* Debug */,
-				E12215601A9DFBC900F6E1CD /* Release */,
+				E112FEBB1AB9AFC1009C6F09 /* Debug */,
+				E112FEBC1AB9AFC1009C6F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E12215611A9DFBC900F6E1CD /* Build configuration list for PBXNativeTarget "MagnetDynamicTableTests" */ = {
+		E112FEBD1AB9AFC1009C6F09 /* Build configuration list for PBXNativeTarget "MagnetDynamicTableTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E12215621A9DFBC900F6E1CD /* Debug */,
-				E12215631A9DFBC900F6E1CD /* Release */,
+				E112FEBE1AB9AFC1009C6F09 /* Debug */,
+				E112FEBF1AB9AFC1009C6F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E12215331A9DFBC900F6E1CD /* Project object */;
+	rootObject = E112FE8F1AB9AFC1009C6F09 /* Project object */;
 }

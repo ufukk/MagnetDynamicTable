@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E122153A1A9DFBC900F6E1CD"
+               BlueprintIdentifier = "E112FE961AB9AFC1009C6F09"
                BuildableName = "MagnetDynamicTable.app"
                BlueprintName = "MagnetDynamicTable"
                ReferencedContainer = "container:MagnetDynamicTable.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E12215531A9DFBC900F6E1CD"
+               BlueprintIdentifier = "E112FEAF1AB9AFC1009C6F09"
                BuildableName = "MagnetDynamicTableTests.xctest"
                BlueprintName = "MagnetDynamicTableTests"
                ReferencedContainer = "container:MagnetDynamicTable.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E12215531A9DFBC900F6E1CD"
+               BlueprintIdentifier = "E112FEAF1AB9AFC1009C6F09"
                BuildableName = "MagnetDynamicTableTests.xctest"
                BlueprintName = "MagnetDynamicTableTests"
                ReferencedContainer = "container:MagnetDynamicTable.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E122153A1A9DFBC900F6E1CD"
+            BlueprintIdentifier = "E112FE961AB9AFC1009C6F09"
             BuildableName = "MagnetDynamicTable.app"
             BlueprintName = "MagnetDynamicTable"
             ReferencedContainer = "container:MagnetDynamicTable.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E122153A1A9DFBC900F6E1CD"
+            BlueprintIdentifier = "E112FE961AB9AFC1009C6F09"
             BuildableName = "MagnetDynamicTable.app"
             BlueprintName = "MagnetDynamicTable"
             ReferencedContainer = "container:MagnetDynamicTable.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E122153A1A9DFBC900F6E1CD"
+            BlueprintIdentifier = "E112FE961AB9AFC1009C6F09"
             BuildableName = "MagnetDynamicTable.app"
             BlueprintName = "MagnetDynamicTable"
             ReferencedContainer = "container:MagnetDynamicTable.xcodeproj">
